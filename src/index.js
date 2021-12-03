@@ -587,8 +587,8 @@ function sanitizeHtml(html, options, _recursing) {
       return classes;
     }
     classes = classes.split(/\s+/);
-    return classes.filter(function (clss) {
-      return allowed.some(function (allowedElem) {
+    return classes.filter(function(clss) {
+      return allowed.some(function(allowedElem) {
         if (allowedElem instanceof RegExp) {
           return allowedElem.test(clss);
         }
